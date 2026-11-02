@@ -1,0 +1,13 @@
+# Core Machine Learning & Computer Vision
+torch>=2.0.0
+torchvision>=0.15.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# User Interface & Monitoring
+streamlit>=1.28.0
+psutil>=5.9.0
+
+# In-Memory Video Decoding (Sterile Room)
+av>=10.0.0
+

@@ -1,0 +1,42 @@
+# Python byte-code and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+privwatch_env/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Datasets & Temp Files
+data/
+temp_monitor/
+*.tmp
+*.mp4
+*.avi
+*.mov
+
+# Logs & Test outputs
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Explicitly track models
+!models/best_model.pth
+
+
+# Incident clips (Pillar 3 - selective persistence)
+incidents/
+

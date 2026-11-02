@@ -1,0 +1,17 @@
+{
+  "include": [
+    "."
+  ],
+  "extraPaths": [
+    ".",
+    "./privwatch",
+    "./sterile_room",
+    "C:/Users/magel/AppData/Roaming/Python/Python310/site-packages",
+    "C:/Program Files/Python310/Lib/site-packages"
+  ],
+  "reportMissingImports": "none",
+  "reportMissingTypeStubs": "none",
+  "reportGeneralTypeIssues": "none",
+  "reportMissingModuleSource": "none"
+}
+
