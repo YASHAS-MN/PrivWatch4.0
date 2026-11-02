@@ -19,8 +19,13 @@ import tempfile
 import time
 from typing import Any
 
-# Handle SIGINT gracefully
-signal.signal(signal.SIGINT, lambda *args: sys.exit(0))
+# Handle SIGINT gracefully if running in the main thread
+try:
+    import threading
+    if threading.current_thread() is threading.main_thread():
+        signal.signal(signal.SIGINT, lambda *args: sys.exit(0))
+except (ValueError, AttributeError):
+    pass
 
 # Ensure package directory is on sys.path for standalone or subfolder execution
 _APP_DIR = str(Path(__file__).resolve().parent)
